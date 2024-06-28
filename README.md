@@ -1,2 +1,2 @@
 # AulasPython
-Aulas de Python Senai
+Exercicios em Python
