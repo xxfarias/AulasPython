@@ -8,9 +8,14 @@ elif pagamento == 2:
     novoPreco = preco - (preco * 0.05)
     print(f'O preço final será de {cores["verde"]}R${novoPreco:.2f}{cores["limpa"]}')
 elif pagamento == 3:
+    parcela = preco /2
+    print(f'A sua compra será parcelada em 2* de R${parcela:.2f}.')
     print(f'O preço final será de {cores["azul"]}R${preco:.2f}{cores["limpa"]}')
 elif pagamento == 4:
+    parcela = int(input('Em quantas parcelas? '))
     precofinal = preco + (preco*0.2)
+    parcelaMensal = precofinal / parcela
+    print(f'A sua compra será parcelada em {parcela}* de R${parcelaMensal:.2f}')
     print(f'O preço final será de {cores["pretoebranco"]}R${precofinal:.2f}{cores["limpa"]}')
 else:
     print(f'{cores["vermelho"]}Forma de pagamento inválida.{cores["limpa"]}')
